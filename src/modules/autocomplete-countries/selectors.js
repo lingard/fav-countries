@@ -24,19 +24,22 @@ export const selectPredictionsForTerms = (state: Object, terms: string): ?Array<
 
 export const findLastTermsWithPredictions = (state: Object): ?string => {
   const history = R.view(historyLens, state)
-  const readyTerms = R.find((terms: string): boolean =>
-    !!selectPredictionsForTerms(state, terms),
+  const readyTerms = R.find(
+    (terms: string): boolean =>
+      !!selectPredictionsForTerms(state, terms),
     history
   )
 
   return readyTerms
 }
 
+const DEFAULT_PREDICTIONS = []
+
 const selectLatestPredictions = (state: Object): ?Array<Object> => {
   const latestTermsWithPredictions = findLastTermsWithPredictions(state)
 
   if (!latestTermsWithPredictions) {
-    return []
+    return DEFAULT_PREDICTIONS
   }
 
   return selectPredictionsForTerms(
@@ -77,7 +80,7 @@ export const selectAutocompleteState = createSelector(
     selectCurrentTerms,
   ],
   (
-    predictions: Array<object> = [],
+    predictions: Array<Object>,
     currentTerms: string,
   ): Object => ({
     predictions,
