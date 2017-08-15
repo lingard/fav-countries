@@ -28,7 +28,6 @@ export default (reducer, saga) => {
   persistStore(store, {
     whitelist: [
       'entities',
-      'my-countries-list',
       'favorite-countries-list'
     ]
   })
