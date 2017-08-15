@@ -1,0 +1,43 @@
+{
+  "name": "fav-countries",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "animated": "^0.2.0",
+    "aphrodite": "^1.2.3",
+    "babel-plugin-flow-react-proptypes": "^4.1.0",
+    "humps": "^2.0.1",
+    "invariant": "^2.2.2",
+    "normalize.css": "^7.0.0",
+    "object-diff": "^0.0.4",
+    "prop-types": "^15.5.10",
+    "ramda": "^0.24.1",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-redux": "^5.0.5",
+    "react-with-hover": "^1.1.2",
+    "recompose": "^0.24.0",
+    "redux": "^3.6.0",
+    "redux-actions": "^2.2.1",
+    "redux-logger": "^3.0.6",
+    "redux-persist": "^4.8.3",
+    "redux-saga": "^0.15.6",
+    "reselect": "^3.0.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "eslint": "^4.4.1",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-plugin-flowtype": "^2.35.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.2.0",
+    "react-scripts": "^1.0.11"
+  },
+  "scripts": {
+    "start": "NODE_PATH=src/ && react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

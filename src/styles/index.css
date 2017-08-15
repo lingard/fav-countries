@@ -1,0 +1,26 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-size: 112.5%;
+  line-height: 1.5;
+  font-family: helvetica-neue, helvetica, arial, sans-serif;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: #FAFAFA;
+  color: #4A4A4A;
+}
+
+#root {
+  display: flex;
+  height: 100%;
+}
